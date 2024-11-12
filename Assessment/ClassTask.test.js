@@ -58,21 +58,22 @@ test("StuedentGrade",()=>{
 })
 
 test("healthyFood",()=>{
-    const shoppingList = {
-     name: 'Apples', category: 'Fruits', isHealthy: true ,
-     name: 'Potato Chips', category: 'Snacks', isHealthy: false ,
-     name: 'Carrots', category: 'Vegetables', isHealthy: true ,
-    name: 'Chocolate Bars', category: 'Sweets', isHealthy: false ,
-    name: 'Greek Yogurt', category: 'Dairy', isHealthy: true ,
-    name: 'Soda', category: 'Beverages', isHealthy: false 
-    };
+    const shoppingList = [
+     {name: 'Apples', category: 'Fruits', isHealthy: true },
+     {name: 'Potato Chips', category: 'Snacks', isHealthy: false} ,
+     {name: 'Carrots', category: 'Vegetables', isHealthy: true },
+    {name: 'Chocolate Bars', category: 'Sweets', isHealthy: false} ,
+    {name: 'Greek Yogurt', category: 'Dairy', isHealthy: true },
+    {name: 'Soda', category: 'Beverages', isHealthy: false} 
+    ];
 
     let result = healthFood(shoppingList)
-    let answer = {
-         name: 'Apples', category: 'Fruits', isHealthy: true ,
-         name: 'Carrots', category: 'Vegetables', isHealthy: true ,
-         name: 'Greek Yogurt', category: 'Dairy', isHealthy: true 
+    let answer = [
+         {name: 'Apples', category: 'Fruits', isHealthy: true} ,
+        { name: 'Carrots', category: 'Vegetables', isHealthy: true} ,
+        { name: 'Greek Yogurt', category: 'Dairy', isHealthy: true }
 
-    }
+    ]
+
     expect(result).toEqual(answer);
 })

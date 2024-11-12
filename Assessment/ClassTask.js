@@ -68,7 +68,7 @@ let names = ["Emily","jack","Sophia","Daniel"]
     function healthFood(array){
         let result = array.filter((num)=>{
             return num.isHealthy == true;
-    });
+        });
         return result;
     };
 
